@@ -47,9 +47,10 @@ const Footer = () => {
                         </NavLink>
                     ))}
                 </ul>
+{/* Social media links */}
                 <ul>
                     {/* <h2 className="text-[#F8E930]">Follow us on:</h2> */}
-                    <div className="flex">
+                    {/* <div className="flex">
                         <li className="border rounded-md border-white p-2 mx-2 my-2">
                             <a href="http://" target="_blank" rel="noopener noreferrer">
                             <FaLinkedin />
@@ -65,8 +66,9 @@ const Footer = () => {
                             <FaYoutube />
                             </a>
                         </li>
-                    </div>
+                    </div> */}
                 </ul>
+                
             </ul>
         </div>
         <div className="text-center px-3 py-6 text-white">

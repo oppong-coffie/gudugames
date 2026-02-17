@@ -70,26 +70,26 @@ const Home = () => {
                     <button onClick={()=>router('/games#guduRun')} className="bg-transparent border border-white rounded-2xl w-full py-2">SEE MORE</button>
                 </div>
               </div>
-
+{/* Gudu FX section */}
               <div className="my-[23vh]">
                 <div className="w-full md:float-end md:w-[48%]">
                   <img src={Images.guduRunRace} className="h-[70vh] object-cover min-w-[18rem] mx-auto max-h-[32rem] rounded-3xl" alt="" />
                 </div>
                 <div className="w-full p-3 my-10 md:w-[48%] md:my-0">
                   <h1 className="text-2xl md:text-3xl text-white font-[500] gradient-border-after pb-3">Gudu FX</h1>
-                  <p className="leading-[3rem] my-10">Gudu FX is an endless driver game available on mobile only. Players run through the streets collecting coins, dodging obstacles and avoiding crush. Players use the coins collected to redeem real world products.</p>
+                  <p className="leading-[3rem] my-10">Gudu FX is an endless driving game available on mobile only. Players run through the streets collecting coins, dodging obstacles and avoiding collisions. Players use the coins collected to redeem real-world products.</p>
 
                     <button onClick={()=>router('/games#guduRace')} className="bg-transparent border border-white rounded-2xl w-full py-2">SEE MORE</button>
                 </div>
               </div>
              
-
+{/* Gudu Warfront section */}
               <div className="flex flex-wrap gap-4 my-[23vh]">
                 <div className="w-full md:w-[48%]">
                   <img src={Images.guduwarFront} className="h-[70vh] object-cover min-w-[18rem] mx-auto max-h-[32rem] rounded-3xl" alt="" />
                 </div>
                 <div className="w-full p-3 my-10 md:w-[48%] md:my-0">
-                  <h1 className="text-2xl md:text-3xl text-white font-[500] gradient-border-after pb-3">Gudu Warefront</h1>
+                  <h1 className="text-2xl md:text-3xl text-white font-[500] gradient-border-after pb-3">Gudu Warfront</h1>
                     <p className="leading-[3rem] my-10">Gudu Warfront is an endless shooting game where players battle enemies, collect coins, and avoid obstacles, with coins redeemable for real-world rewards, making the action both thrilling and rewarding.</p>
                     <button onClick={()=>router('/games#guduWar')} className="bg-transparent border border-white rounded-2xl w-full py-2">SEE MORE</button>
                 </div>

@@ -47,6 +47,7 @@ const Aboutus = () => {
                         <li>Gudu Run – An endless runner game where players collect coins, avoid obstacles, and redeem rewards for real-world products.</li>
                         <li>Gudu FX – An endless driving game that combines fun and strategy, with coins earned during gameplay exchangeable for real-world rewards.</li>
                         <li>Gudu Warfront – A thrilling endless shooting game where players battle enemies, collect coins, and turn their victories into tangible prizes.</li>
+                        <li>Gudu Crush – An endless match-3 puzzle game where players match jewels to earn points, use boosters to boost scores, and convert tokens into real-world rewards.</li>
                     </ul>
                     <br />
                     Our players use the coins collected during gameplay to earn tokens, which they can redeem for products and services at our partner centers, creating a seamless bridge between virtual gaming and real-world benefits.

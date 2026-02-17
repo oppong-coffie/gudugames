@@ -71,6 +71,7 @@ const Games = () => {
               </section>
             
             
+            {/* Gudu Warfront Section */}
             <section className="my-[17vh] min-h-[80vh]" id='guduWar'>
                 <div className="w-full md:float-end md:w-[48%]">
                     <img src={Images.guduwarFront} className="h-[79vh] object-cover rounded-md min-w-[23rem] mx-auto max-h-[48rem]" alt="" />
