@@ -120,23 +120,29 @@ const Aboutus = () => {
           <div className="p-9">
             <h1 className="text-3xl w-full text-center md:text-5xl font-[500] mb-4">Meet the Gudu Team. </h1>
             <p className="text-muted-foreground text-center text-sm">Get to know the heart and soul of Gudu - the people behind our games.</p>
+<div className="flex flex-wrap mt-[11vh]">
+  {showsample.map((items, index) => (
+    <div key={index} className="w-1/4 p-2">
+      <Link to={`/teams-details/${items.name}`}>
+        <div
+          className="w-full aspect-square bg-center bg-cover rounded-lg"
+          style={{ backgroundImage: `url(${items.profile})` }}
+        />
 
-            <div className="flex flex-wrap gap-5 mt-[11vh]">
-              {
-                showsample.map(items=>{
-                  return(
-                    <div className="w-[29.33%] min-w-[14rem] mx-auto">
-                        <Link to={`/teams-details/${items.name}`}>
-                        <div className="w-full h-[30vh] bg-center bg-no-repeat" style={{background:`url(${items.profile})`,backgroundPosition:'50% 20%',backgroundSize:'80%',backgroundRepeat:'no-repeat'}}></div>
-                        {/* <h4 className="text-sm text-[#DECD00] my-1">{items.cardTitle}</h4> */}
-                        <h1 className="text-center text-2xl font-500 my-1">{items.name}</h1>
-                        <h3 className="text-center text-muted-foreground my-3">{items.role}</h3>
-                        </Link>
-                    </div>
-                  )
-                })
-              }
-            </div>
+        <h1 className="text-center text-lg font-medium my-1">
+          {items.name}
+        </h1>
+
+        <h3 className="text-center text-muted-foreground text-sm">
+          {items.role}
+        </h3>
+      </Link>
+    </div>
+  ))}
+</div>
+
+
+
             <hr className="mt-3"/>
             {/* <Link to={'/teams'} className="py-3 px-8 rounded-full text-[#DECD00] border-[2px] border-[#66666666]">View all</Link> */}
           </div>
