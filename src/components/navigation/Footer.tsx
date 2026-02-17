@@ -1,5 +1,5 @@
 import Images from "@/constants/images.constants";
-import { FaFacebookF, FaLinkedin, FaYoutube } from "react-icons/fa";
+// import { FaFacebookF, FaLinkedin, FaYoutube } from "react-icons/fa";
 import { NavLink } from "react-router";
 import { FooterMENUITEMS } from "./menuBar";
 
