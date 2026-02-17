@@ -92,31 +92,31 @@ export default function GuduTeamContext({children}){
                     },
                 ]
             },
-            // {
-            //     cardTitle:"Meet The Gudu",
-            //     profile_cover:Images.profile,
-            //     profile:Images.profile,
-            //     name:'Kane Mani',
-            //     role:'Software Developer',
-            //     about:'Kane Mani is the visionary leader behind Gudu Studios, driving the company’s mission and overseeing both business strategy and technology innovation. As the CEO and CTO, Kane combines entrepreneurial expertise with technical leadership to ensure Gudu remains at the forefront of the gaming industry.',
-            //     socials:[
-            //         {
-            //             icon: <FaFacebookSquare size={30} className="text-blue-600" />,
-            //             name:'Facebook',
-            //             url:'www.facebook.com'
-            //         },
-            //         {
-            //             icon: <FaXTwitter size={30} />,
-            //             name:'Twitter',
-            //             url:'www.twitter.com'
-            //         },
-            //         {
-            //             icon: <FaYoutube size={30} className="text-red-600" />,
-            //             name:'Youtube',
-            //             url:'www.youtube.com'
-            //         },
-            //     ]
-            // },
+            {
+                cardTitle:"Meet The Gudu",
+                profile_cover:Images.dan,
+                profile:Images.dan,
+                name:'Dan Wenpanga Sidsaya',
+                role:'Software Developer',
+                about:'I am a detail-oriented and organized software developer with strong professional skills that brings enormous talents for software design, development and integration to life as a front end engineer on this project I sought to bring to reality creative designs and api integrations with ease.',
+                socials:[
+                    {
+                        icon: <FaFacebookSquare size={30} className="text-blue-600" />,
+                        name:'Facebook',
+                        url:'www.facebook.com'
+                    },
+                    {
+                        icon: <FaXTwitter size={30} />,
+                        name:'Twitter',
+                        url:'www.twitter.com'
+                    },
+                    {
+                        icon: <FaYoutube size={30} className="text-red-600" />,
+                        name:'Youtube',
+                        url:'www.youtube.com'
+                    },
+                ]
+            },
             // {
             //     cardTitle:"Meet The Gudu",
             //     profile_cover:Images.andyProfile,

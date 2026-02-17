@@ -25,6 +25,8 @@ import IosStore from "@/assets/IOSstore.png"
 import silhoutte from "@/assets/silhoutte.png"
 import JamesProfile from "@/assets/JamesProfile.jpeg"
 import GuduCrush from "@/assets/GuduCrush.png"
+import dan from "@/assets/dan.jpeg"
+
 
 const Images ={
     gudulogo,
@@ -53,7 +55,8 @@ const Images ={
     guduwarFront,
     melcom,
     GooglePlay,
-    IosStore
+    IosStore,
+    dan
 }
 
 export default Images
