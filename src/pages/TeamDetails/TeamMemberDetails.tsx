@@ -58,32 +58,32 @@ const TeamMemberDetails = () => {
             <div className="w-[22%] min-w-[14rem] mx-auto">
               <Link to={`/teams-details/${teams[memberPos]?.name}`}>
                 <div className="w-full h-[30vh] bg-center bg-no-repeat" style={{ backgroundImage: `url(${teams[memberPos]?.profile})`, backgroundPosition: '50% 20%', backgroundSize: '80%', backgroundRepeat: 'no-repeat' }}></div>
-                <h4 className="text-sm text-[#DECD00] my-1">{teams[memberPos]?.cardTitle}</h4>
-                <h1 className="text-2xl font-500 my-1">{teams[memberPos]?.name}</h1>
+                {/* <h4 className="text-sm text-[#DECD00] my-1">{teams[memberPos]?.cardTitle}</h4> */}
+                <h1 className="text-xl font-500 my-1">{teams[memberPos]?.name}</h1>
                 <h3 className="text-muted-foreground my-3">{teams[memberPos]?.role}</h3>
               </Link>
             </div>
             <div className="w-[22%] min-w-[14rem] mx-auto">
               <Link to={`/teams-details/${teams[(memberPos + 1) % teams.length]?.name}`}>
                 <div className="w-full h-[30vh] bg-center bg-no-repeat" style={{ backgroundImage: `url(${teams[(memberPos + 1) % teams.length]?.profile})`, backgroundPosition: '50% 20%', backgroundSize: '80%', backgroundRepeat: 'no-repeat' }}></div>
-                <h4 className="text-sm text-[#DECD00] my-1">{teams[(memberPos + 1) % teams.length]?.cardTitle}</h4>
-                <h1 className="text-2xl font-500 my-1">{teams[(memberPos + 1) % teams.length]?.name}</h1>
+                {/* <h4 className="text-sm text-[#DECD00] my-1">{teams[(memberPos + 1) % teams.length]?.cardTitle}</h4> */}
+                <h1 className="text-xl font-500 my-1">{teams[(memberPos + 1) % teams.length]?.name}</h1>
                 <h3 className="text-muted-foreground my-3">{teams[(memberPos + 1) % teams.length]?.role}</h3>
               </Link>
             </div>
             <div className="w-[22%] min-w-[14rem] mx-auto">
               <Link to={`/teams-details/${teams[(memberPos + 2) % teams.length]?.name}`}>
                 <div className="w-full h-[30vh] bg-center bg-no-repeat" style={{ backgroundImage: `url(${teams[(memberPos + 2) % teams.length]?.profile})`, backgroundPosition: '50% 20%', backgroundSize: '80%', backgroundRepeat: 'no-repeat' }}></div>
-                <h4 className="text-sm text-[#DECD00] my-1">{teams[(memberPos + 2) % teams.length]?.cardTitle}</h4>
-                <h1 className="text-2xl font-500 my-1">{teams[(memberPos + 2) % teams.length]?.name}</h1>
+                {/* <h4 className="text-sm text-[#DECD00] my-1">{teams[(memberPos + 2) % teams.length]?.cardTitle}</h4> */}
+                <h1 className="text-xl font-500 my-1">{teams[(memberPos + 2) % teams.length]?.name}</h1>
                 <h3 className="text-muted-foreground my-3">{teams[(memberPos + 2) % teams.length]?.role}</h3>
               </Link>
             </div>
             <div className="w-[22%] min-w-[14rem] mx-auto">
               <Link to={`/teams-details/${teams[(memberPos + 3) % teams.length]?.name}`}>
                 <div className="w-full h-[30vh] bg-center bg-no-repeat" style={{ backgroundImage: `url(${teams[(memberPos + 3) % teams.length]?.profile})`, backgroundPosition: '50% 20%', backgroundSize: '80%', backgroundRepeat: 'no-repeat' }}></div>
-                <h4 className="text-sm text-[#DECD00] my-1">{teams[(memberPos + 3) % teams.length]?.cardTitle}</h4>
-                <h1 className="text-2xl font-500 my-1">{teams[(memberPos + 3) % teams.length]?.name}</h1>
+                 {/* <h4 className="text-sm text-[#DECD00] my-1">{teams[(memberPos + 3) % teams.length]?.cardTitle}</h4> */}
+                <h1 className="text-lg font-500 my-1">{teams[(memberPos + 3) % teams.length]?.name}</h1>
                 <h3 className="text-muted-foreground my-3">{teams[(memberPos + 3) % teams.length]?.role}</h3>
               </Link>
             </div>
