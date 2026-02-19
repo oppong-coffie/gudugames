@@ -52,41 +52,37 @@ const TeamMemberDetails = () => {
 
       <section className="px-[3vw] md:px-[4vw] py-[4vh]">
         <div className="p-9">
-          <h3 className='mt-[18vh] text-2xl mb-3'>Meet the Gudu's</h3>
-          <p className='text-muted-foreground text-sm'>Get to know the heart and soul of Gudu - the people behind our games.</p>
-          <div className="flex flex-wrap gap-5 mt-[5vh]">
-            <div className="w-[22%] min-w-[14rem] mx-auto">
+          <h3 className='mt-[18vh] text-2xl mb-3'>Meet the Gudu</h3>
+          <p className='text-muted-foreground text-sm'>Get to know the heart and soul of Gudu - the person behind our games.</p>
+          <div className="flex justify-center mt-[5vh]">
+            <div className="w-full md:w-1/3 min-w-[14rem] mx-auto p-4">
               <Link to={`/teams-details/${teams[memberPos]?.name}`}>
-                <div className="w-full h-[30vh] bg-center bg-no-repeat" style={{ backgroundImage: `url(${teams[memberPos]?.profile})`, backgroundPosition: '50% 20%', backgroundSize: '80%', backgroundRepeat: 'no-repeat' }}></div>
-                {/* <h4 className="text-sm text-[#DECD00] my-1">{teams[memberPos]?.cardTitle}</h4> */}
-                <h1 className="text-xl font-500 my-1">{teams[memberPos]?.name}</h1>
-                <h3 className="text-muted-foreground my-3">{teams[memberPos]?.role}</h3>
+                <div className="w-full aspect-[4/5] bg-center bg-cover rounded-2xl shadow-xl hover:scale-[1.02] transition-transform duration-300" style={{ backgroundImage: `url(${teams[memberPos]?.profile})` }}></div>
+                <h1 className="text-2xl font-bold my-4 text-center">{teams[memberPos]?.name}</h1>
+                <h3 className="text-[#3C49C0] font-medium text-lg text-center">{teams[memberPos]?.role}</h3>
               </Link>
             </div>
-            <div className="w-[22%] min-w-[14rem] mx-auto">
+            {/* <div className="w-[22%] min-w-[14rem] mx-auto">
               <Link to={`/teams-details/${teams[(memberPos + 1) % teams.length]?.name}`}>
                 <div className="w-full h-[30vh] bg-center bg-no-repeat" style={{ backgroundImage: `url(${teams[(memberPos + 1) % teams.length]?.profile})`, backgroundPosition: '50% 20%', backgroundSize: '80%', backgroundRepeat: 'no-repeat' }}></div>
-                {/* <h4 className="text-sm text-[#DECD00] my-1">{teams[(memberPos + 1) % teams.length]?.cardTitle}</h4> */}
                 <h1 className="text-xl font-500 my-1">{teams[(memberPos + 1) % teams.length]?.name}</h1>
                 <h3 className="text-muted-foreground my-3">{teams[(memberPos + 1) % teams.length]?.role}</h3>
               </Link>
-            </div>
-            <div className="w-[22%] min-w-[14rem] mx-auto">
+            </div> */}
+            {/* <div className="w-[22%] min-w-[14rem] mx-auto">
               <Link to={`/teams-details/${teams[(memberPos + 2) % teams.length]?.name}`}>
                 <div className="w-full h-[30vh] bg-center bg-no-repeat" style={{ backgroundImage: `url(${teams[(memberPos + 2) % teams.length]?.profile})`, backgroundPosition: '50% 20%', backgroundSize: '80%', backgroundRepeat: 'no-repeat' }}></div>
-                {/* <h4 className="text-sm text-[#DECD00] my-1">{teams[(memberPos + 2) % teams.length]?.cardTitle}</h4> */}
                 <h1 className="text-xl font-500 my-1">{teams[(memberPos + 2) % teams.length]?.name}</h1>
                 <h3 className="text-muted-foreground my-3">{teams[(memberPos + 2) % teams.length]?.role}</h3>
               </Link>
-            </div>
-            <div className="w-[22%] min-w-[14rem] mx-auto">
+            </div> */}
+            {/* <div className="w-[22%] min-w-[14rem] mx-auto">
               <Link to={`/teams-details/${teams[(memberPos + 3) % teams.length]?.name}`}>
                 <div className="w-full h-[30vh] bg-center bg-no-repeat" style={{ backgroundImage: `url(${teams[(memberPos + 3) % teams.length]?.profile})`, backgroundPosition: '50% 20%', backgroundSize: '80%', backgroundRepeat: 'no-repeat' }}></div>
-                 {/* <h4 className="text-sm text-[#DECD00] my-1">{teams[(memberPos + 3) % teams.length]?.cardTitle}</h4> */}
                 <h1 className="text-lg font-500 my-1">{teams[(memberPos + 3) % teams.length]?.name}</h1>
                 <h3 className="text-muted-foreground my-3">{teams[(memberPos + 3) % teams.length]?.role}</h3>
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

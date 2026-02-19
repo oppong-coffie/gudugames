@@ -4,44 +4,45 @@ import { FaFacebookSquare, FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 interface GuduContextType {
-  teams: any[]; // or teams: Team[] if you have a proper type
+    teams: any[]; // or teams: Team[] if you have a proper type
 }
 
 
 export const GuduContext = createContext<GuduContextType>({
-  teams: []
+    teams: []
 });
 
-export default function GuduTeamContext({children}){
-    const [teamMates,setTeamMates] = useState<any[]>([])
+export default function GuduTeamContext({ children }) {
+    const [teamMates, setTeamMates] = useState<any[]>([])
 
-    useEffect(()=>{
+    useEffect(() => {
         setTeamMates([
             {
-                cardTitle:"Meet The Gudu Team",
-                profile_cover:Images.profile,
-                profile:Images.profile,
-                name:'Kane Mani',
-                role:'Co-Founder & CEO',
-                about:'Kane is the Co-founder and CEO of Gudu Studios, where he leads the company’s vision, strategy, and technological innovation.As CEO, Kane drives Gudu’s mission to build globally competitive gaming experiences emerging from Africa. He oversees corporate strategy, product development, partnerships, and long-term growth, ensuring the studio operates at the intersection of creativity, technology, and scalable business execution.With a strong foundation in both entrepreneurship and technical leadership, Kane bridges the gap between innovation and commercialization. He works closely with engineering, design, and creative teams to deliver high-quality interactive experiences while positioning Gudu Studios at the forefront of the evolving gaming industry.Under his leadership, Gudu Studios is focused on developing culturally authentic, technologically advanced, and globally marketable games.',
-                socials:[
+                cardTitle: "Meet The Gudu Brain",
+                profile_cover: Images.profile,
+                profile: Images.profile,
+                name: 'Kane Mani',
+                role: 'Co-Founder & CEO',
+                about: 'Kane is the Co-founder and CEO of Gudu Studios, where he leads the company’s vision, strategy, and technological innovation.As CEO, Kane drives Gudu’s mission to build globally competitive gaming experiences emerging from Africa. He oversees corporate strategy, product development, partnerships, and long-term growth, ensuring the studio operates at the intersection of creativity, technology, and scalable business execution.With a strong foundation in both entrepreneurship and technical leadership, Kane bridges the gap between innovation and commercialization. He works closely with engineering, design, and creative teams to deliver high-quality interactive experiences while positioning Gudu Studios at the forefront of the evolving gaming industry.Under his leadership, Gudu Studios is focused on developing culturally authentic, technologically advanced, and globally marketable games.',
+                socials: [
                     {
                         icon: <FaFacebookSquare size={30} className="text-blue-600" />,
-                        name:'Facebook',
-                        url:'www.facebook.com'
+                        name: 'Facebook',
+                        url: 'www.facebook.com'
                     },
                     {
                         icon: <FaXTwitter size={30} />,
-                        name:'Twitter',
-                        url:'www.twitter.com'
+                        name: 'Twitter',
+                        url: 'www.twitter.com'
                     },
                     {
                         icon: <FaYoutube size={30} className="text-red-600" />,
-                        name:'Youtube',
-                        url:'www.youtube.com'
+                        name: 'Youtube',
+                        url: 'www.youtube.com'
                     },
                 ]
             },
+            /*
             {
                 cardTitle:"Meet The Gudu",
                 profile_cover:Images.andyProfile,
@@ -117,6 +118,7 @@ export default function GuduTeamContext({children}){
                     },
                 ]
             },
+            */
             // {
             //     cardTitle:"Meet The Gudu",
             //     profile_cover:Images.andyProfile,
@@ -343,10 +345,10 @@ export default function GuduTeamContext({children}){
             //     ]
             // },
         ])
-    },[])
+    }, [])
 
     const guduCtx = {
-        teams:teamMates
+        teams: teamMates
     }
     return (
         <GuduContext.Provider value={guduCtx}>
