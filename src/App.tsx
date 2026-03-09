@@ -18,47 +18,61 @@ import ContactUs from './pages/Contact/ContactUs'
 import PartnerDetails from './pages/PartnerDetails/PartnerDetails'
 import NewsPage from './pages/News/NewsPage'
 import Policies from './pages/Policies/Policies'
+import AdminLogin from './pages/Auth/AdminLogin'
+import PartnerLogin from './pages/Auth/PartnerLogin'
+import PartnerSignup from './pages/Auth/PartnerSignup'
 
-
-function App() {  
+function App() {
   // Scroll to top when location changes
   useEffect(() => {
-    window.scrollTo(0,0);
+    window.scrollTo(0, 0);
   }, [location]);
 
 
-    useEffect(() => {
-      AOS.init({
-        duration: 800,
-        easing: 'ease-in-out',
-        once: false
-      });
-    }, []);
-    
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: false
+    });
+  }, []);
+
   const router = createBrowserRouter([
     {
       path: '/',
-      element: <RootLayout/>,
-      children:[
-        {element:<Home/>, index:true},
-        {element:<Aboutus/>, path:'/aboutus'},
-        {element:<Vision/>, path:'/vision'},
-        {element:<Games/>, path:'/games'},
-        {element:<Partners/>, path:'/partners'},
-        {element:<Store/>, path:'/gamestore'},
-        {element:<TeamMember/>, path:'/teams'},
-        {element:<Careers/>, path:'/careers'},
-        {element:<ContactUs/>, path:'/contactus'},
-        {element:<TeamMemberDetails/>, path:'/teams-details/:teamName'},
-        {element:<PartnerDetails/>, path:'/partner-details/:partner'},
-        {element:<NewsPage/>, path:'/gudu-news/:id'},
-        {element:<Policies/>, path:'/policy/:id'},
+      element: <RootLayout />,
+      children: [
+        { element: <Home />, index: true },
+        { element: <Aboutus />, path: '/aboutus' },
+        { element: <Vision />, path: '/vision' },
+        { element: <Games />, path: '/games' },
+        { element: <Partners />, path: '/partners' },
+        { element: <Store />, path: '/gamestore' },
+        { element: <TeamMember />, path: '/teams' },
+        { element: <Careers />, path: '/careers' },
+        { element: <ContactUs />, path: '/contactus' },
+        { element: <TeamMemberDetails />, path: '/teams-details/:teamName' },
+        { element: <PartnerDetails />, path: '/partner-details/:partner' },
+        { element: <NewsPage />, path: '/gudu-news/:id' },
+        { element: <Policies />, path: '/policy/:id' },
       ]
     },
+    {
+      path: '/admin-login',
+      element: <AdminLogin />,
+    },
+    {
+      path: '/partner-login',
+      element: <PartnerLogin />,
+    },
+    {
+      path: '/partner-signup',
+      element: <PartnerSignup />,
+    }
   ])
 
   return (
-   <RouterProvider router={router} />
+    <RouterProvider router={router} />
   )
 }
 

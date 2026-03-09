@@ -118,22 +118,23 @@ const Aboutus = () => {
 
       <section className="px-[3vw] md:px-[6vw]">
         <div className="p-9">
-          <h1 className="text-3xl w-full text-center md:text-5xl font-[500] mb-4">Meet the Brain Behind Gudu</h1>
-          <p className="text-muted-foreground text-center text-sm">Driving innovation and excellence at the forefront of African gaming.</p>
-          <div className="flex justify-center mt-[11vh]">
+          <h1 className="text-3xl w-full text-center md:text-5xl font-[500] mb-4">Meet the Gudu Team. </h1>
+          <p className="text-muted-foreground text-center text-sm">Get to know the heart and soul of Gudu - the people behind our games.</p>
+
+          <div className="flex flex-wrap mt-[11vh]">
             {showsample.map((items, index) => (
-              <div key={index} className="w-full md:w-1/3 p-4">
+              <div key={index} className="w-1/4 p-2">
                 <Link to={`/teams-details/${items.name}`}>
                   <div
-                    className="w-full aspect-[4/5] bg-center bg-cover rounded-2xl shadow-xl hover:scale-[1.02] transition-transform duration-300"
+                    className="w-full aspect-square bg-center bg-cover rounded-lg"
                     style={{ backgroundImage: `url(${items.profile})` }}
                   />
 
-                  <h1 className="text-center text-2xl font-bold my-4">
+                  <h1 className="text-center text-lg font-medium my-1">
                     {items.name}
                   </h1>
 
-                  <h3 className="text-center text-[#3C49C0] font-medium text-lg">
+                  <h3 className="text-center text-muted-foreground text-sm">
                     {items.role}
                   </h3>
                 </Link>
