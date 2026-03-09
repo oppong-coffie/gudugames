@@ -42,7 +42,7 @@ const PartnerLogin = () => {
                     <div className="space-y-1">
                         <div className="flex justify-between items-center">
                             <label className="text-sm font-medium text-zinc-300 block">Password</label>
-                            <a href="#" className="text-xs text-blue-400 hover:text-blue-300 transition-colors">
+                            <a href="#" className="text-xs text-yellow-300 hover:text-yellow-100 transition-colors">
                                 Forgot password?
                             </a>
                         </div>

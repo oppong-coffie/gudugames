@@ -41,7 +41,7 @@ const AdminLogin = () => {
                     <div className="space-y-2">
                         <div className="flex justify-between items-center">
                             <label className="text-sm font-medium text-zinc-300 block">Password</label>
-                            <a href="#" className="text-xs text-[#DECD00] hover:text-yellow-300 transition-colors">
+                            <a href="#" className="text-xs text-yellow-300 hover:text-yellow-300 transition-colors">
                                 Forgot password?
                             </a>
                         </div>
